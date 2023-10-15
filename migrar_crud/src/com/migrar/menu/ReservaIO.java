@@ -31,10 +31,10 @@ public class ReservaIO {
 			case 1:
 				scanner.nextLine();
 				Reserva reserva = new Reserva();
-				System.out.print("Digite o horario da reserva no formato dd/MM/yyyy HH:mm:ss");
+				System.out.print("Digite o horario da reserva no formato dd/MM/yyyy HH:mm:ss ");
 				String dataEhoraReserva = scanner.nextLine();
 				reserva.setDataReserva(LocalDateTime.parse(dataEhoraReserva, formatter));
-				System.out.print("Informe o status da reserva:");
+				System.out.print("Informe o status da reserva: ");
 				reserva.setStatusReserva(scanner.nextLine());
 				System.out.print("Digite o ID do Cliente: ");
 				Cliente clienteReserva = new Cliente();
@@ -56,7 +56,7 @@ public class ReservaIO {
 				System.out.print("Digite o ID do Reserva a ser atualizada: ");
 				reservaAtualizada.setIdReserva(scanner.nextLong());
 				scanner.nextLine();
-				System.out.print("Digite o horario da reserva no formato dd/MM/yyyy HH:mm:ss");
+				System.out.print("Digite o horario da reserva no formato dd/MM/yyyy HH:mm:ss ");
 				String dataEhoraReservaAtualizada = scanner.nextLine();
 				reservaAtualizada.setDataReserva(LocalDateTime.parse(dataEhoraReservaAtualizada, formatter));
 				System.out.print("Informe o status da reserva: ");
